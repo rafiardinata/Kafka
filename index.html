@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Tugas Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar container">
+            <div class="logo">Kafka <span>Lazuardi</span></div>
+            
+            <div class="nav-wrapper">
+                <nav id="navMenu">
+                    <ul>
+                        <li><a href="#home" class="active">Beranda</a></li>
+                        <li><a href="#assignments">Tugas</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                    </ul>
+                </nav>
+                
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <button id="menuToggle" class="menu-btn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content container">
+            <h1>Selamat Datang di Web Pengumpulan Tugas</h1>
+            <p>Halo, saya Kafka Lazuardi <br> Web ini digunakan untuk mendokumentasikan, mengelola, dan menampilkan seluruh hasil kerja keras akademik dan proyek saya untuk matkul Algoritma Pemrograman</br></p>
+            <a href="#assignments" class="btn">Lihat Tugas <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <main class="container" id="assignments">
+        <div class="section-title">
+            <h2>Daftar Tugas Algoritma Pemrograman</h2>
+            <p>Gunakan filter pencarian untuk menemukan tugas 1 sampai 5</p>
+        </div>
+
+        <div class="controls">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="tugas1">Tugas 1</button>
+                <button class="filter-btn" data-filter="tugas2">Tugas 2</button>
+                <button class="filter-btn" data-filter="tugas3">Tugas 3</button>
+                <button class="filter-btn" data-filter="tugas4">Tugas 4</button>
+                <button class="filter-btn" data-filter="tugas5">Tugas 5</button>
+            </div>
+        </div>
+
+        <div class="assignment-grid" id="assignmentGrid">
+            </div>
+    </main>
+
+    <section id="about" class="about-section">
+        <div class="container about-content">
+            <div class="about-text">
+                <h2>Tentang Saya</h2>
+                <p>Saya adalah seorang mahasiswa yang sedang menempuh pendidikan S1 Teknik Informatika di Universitas PGRI Kanjuruhan Malang. Web ini digunakan untuk memenuhi tugas UAS dan memastikan seluruh tugas terdokumentasi dengan rapi, serta dapat diakses kapan saja.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 KafkaLazuardi. Algoritma Pemrograman.</p>
+            <div class="socials">
+                <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://mail.google.com/mail"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
